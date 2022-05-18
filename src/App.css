@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Josefin+Sans:wght@200;300&display=swap');
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: aqua;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  font-size: 2rem;
+}
+.container{
+  height: 80vh;
+  width: 50vh;
+  background-color: black;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.wrapper{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(6,1fr);
+  gap: 10px;
+}
+.screen{
+  border-radius: 10px;
+  /* overflow: hidden; */
+  border: 2px solid white;
+  grid-column: 1 / -1;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 3rem;
+  text-align: right;
+
+}
+.screen input{
+width: 100%;
+height: auto;
+font-size: 1rem;
+text-align: right;
+  border-radius: 10px;
+
+  padding: 10px 30px;
+  background-color: aqua;
+}
+.btn{
+  display: grid;
+  place-content: center;
+  background-color: rgba(54, 52, 52);
+  border-radius: 50px;
+  color: white;
+  cursor: pointer ;
+  font-weight: bold;
+}
+.btn:hover{
+  background-color: gray;
+}
+.light_gray{
+  background-color: gray;
+  color: black;
+}
+.light_gray:hover{
+  background-color: white;
+}
+.orange{
+  background-color: white;
+  color: black;
+  
+}
+.zero{
+  grid-column: 1 / span 2;
+  border-radius: 25px;
+  place-content: unset;
+  align-items: center;
+  padding-left: 1.5rem; ;
+}
